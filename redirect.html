@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const offerUrl = 'https://www1.affhone.fyi/click?pid=17228&offer_id=712'; // Оффер
+
+            // Проверяем, TikTok ли это встроенный браузер
+            const isTikTokBrowser = /tiktok/i.test(navigator.userAgent);
+
+            if (isTikTokBrowser) {
+                // Принуждаем пользователя открыть во внешнем браузере
+                alert('Please click "Open in Browser" to continue.');
+            } else {
+                // Перенаправление во внешнем браузере
+                window.location.href = offerUrl;
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected, <a href="https://www1.affhone.fyi/click?pid=17228&offer_id=712">click here</a>.</p>
+</body>
+</html>
